@@ -1,0 +1,47 @@
+.page{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.photo {
+  max-width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.coffee-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+dialog {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 50%;
+  border-radius: 1rem;
+}
+
+dialog .photo {
+  width: 40%;
+}
+
+dialog button {
+  background-color: rgb(200, 0, 0);
+  color: #fff;
+}
